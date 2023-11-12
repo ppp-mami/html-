@@ -12,22 +12,23 @@
   <h1>
     <img src="logo.svg" alt="ロゴ画像" width="116" height="60">
   </h1>
-  <li><a href="#about">About</a></li>
-  <li><a href="#works">Works</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><img src="instagram.png" alt="instagramのロゴ画像" width="28" height="28"></li>
-  
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><img src="instagram.png" alt="instagramのロゴ画像" width="28" height="28"></li>
+  </ul>
   
 </header>
-<section1>
-  <h2>
-    <img src="mainvisual-pc.jpg" alt="画像" width="100%" height="420">
-  </h2>
-</section1>
+<section>
+  
+    <img src="mainvisual-pc.jpg" alt="画像">
+ 
+</section>
 
 <main>
-  <div class="About" id="about">
+  <div class="About wrapper" id="about">
     <h3>About</h3>
     <p>Xxxxx Ashiey</p>
 
@@ -39,7 +40,8 @@
     <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
   </div>
 
-  <div class="Works" id="works">
+  <div class="Works wrapper" id="works">
+    
     <h3>Works</h3>
     <li>
       <img src="works1_0.jpg" alt="画像1" width="294" height="200">
@@ -52,23 +54,25 @@
     
   </div>
 
-  <div class="News" id="news">
+  <div class="News wrapper" id="news">
     <h3>News</h3>
-    <table>
-      <tbody>
-        <tr><td>2020.xx.xx</td><td>デザイン雑誌「xxxxxx vol.11」に搭載していただきました。</td></tr>
-        <tr><td>2020.xx.xx</td><td>xx月xx日から写真集「xxxxxx」の販売を開始します。</td></tr>
-        <tr><td>2019.xx.xx</td><td>[イベント開催のお知らせ]テキストテキストテキストテキストテキストテキストテキストテキスト</td></tr>
-        <tr><td>2019.xx.xx</td><td>デザイン雑誌「xxxxxx vol.10」に搭載していただきました。</td></tr>
-        <tr><td>2019.xx.xx</td><td>[個展開催のお知らせ]テキストテキストテキストテキストテキストテキストテキストテキスト</td></tr>
-      </tbody>
-    </table>
+    <dl>
+      <dt>2020.10.24</dt>
+      <dd>MY-Portfolio制作日</dd>
+      <dt>2020.09.30</dt>
+      <dd>CAFEリニューアルオープン</dd>
+      <dt>2019.09.12</dt>
+      <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+      <dt>2019.06.01</dt>
+      <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+      <dt>2019.12.21</dt>
+      <dd>長年の夢だったCAFEオープン</dd>
+    </dl>
   </div>
 
-  <div class="Contact" id="contact">
+  <div class="Contact wrapper" id="contact">
     <h3>Contact</h3>
-    
-      <form>
+    <form>
         <div>
           <label>
             NAME
@@ -76,9 +80,7 @@
           </label>
           
         </div>
-      </form>
-
-    <form>
+      
       <div>
         <label>
           E-mail
@@ -86,17 +88,19 @@
         </label>
       </div>
 
-    </form>
-    <form>
       <div>
       <label>
         MESSAGE
         <textarea></textarea>
       </label>
       </div>
+
+      <div class="button">
+        <input type="submit" value="送信">
+      </div>
     </form>
     
-    <button>送信</button>
+    
   </div>
   
 </main>
